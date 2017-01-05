@@ -31,3 +31,5 @@
                                 'walker' => new vgmWalker())); ?>
       </nav>
     </header>
+    <div class="site-content">
+      <main class="main">
