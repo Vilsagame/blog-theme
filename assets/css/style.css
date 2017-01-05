@@ -138,7 +138,7 @@ a {
   width: 250px;
   -webkit-transform: translateX(-250px);
   transform: translateX(-250px);
-  background-color: #0c1d00;
+  background-color: #213612;
   -webkit-overflow-scrolling: touch;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -153,6 +153,7 @@ a {
 }
 
 .menu a {
+  padding: 10px 0;
   text-align: center;
   color: #97d36c;
   border-bottom: 1px solid #5c9632;
