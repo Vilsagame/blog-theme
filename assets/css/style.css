@@ -193,6 +193,30 @@ a {
   background-color: rgba(0, 0, 0, .6);
 }
 
+.article {
+  padding: 10px;
+}
+
+.article h1 {
+  color: #c8f3a9;
+}
+
+.article a {
+  text-decoration: underline;
+  color: #c8f3a9;
+}
+
+.page-numbers {
+  padding-right: 10px;
+  text-decoration: underline;
+  color: #c8f3a9;
+}
+
+.page-numbers.current {
+  text-decoration: inherit;
+  color: inherit;
+}
+
 .sidebar {
   margin: 10px 0;
   padding: 10px;
