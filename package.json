@@ -1,0 +1,42 @@
+{
+  "name": "blog.vilsagame-theme",
+  "version": "0.0.1",
+  "description": "Thème du blog : Vilsagame",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "theme",
+    "wordpress",
+    "vilsagame"
+  ],
+  "author": "Cyril POIDEVIN",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "^6.3.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "del": "^2.2.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cssbeautify": "^0.1.3",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csso": "^2.0.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
+  }
+}
