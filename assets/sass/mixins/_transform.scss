@@ -1,0 +1,15 @@
+// ----------------------------------------------------------
+// \file assets\sass\mixins\_transform.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Mixins 'transform'
+// ----------------------------------------------------------
+
+@mixin transform($transforms) {
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+        -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+          transform: $transforms;
+}

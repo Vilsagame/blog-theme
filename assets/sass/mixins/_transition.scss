@@ -1,0 +1,57 @@
+// ----------------------------------------------------------
+// \file assets\sass\mixins\_transition.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// transition's mixins
+// ----------------------------------------------------------
+
+// ----------------------------------------------------------
+// 1. Transition
+// ----------------------------------------------------------
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+
+// ----------------------------------------------------------
+// 2. Transition-property
+// ----------------------------------------------------------
+@mixin transition-property($property...) {
+  -moz-transition-property:    $property;
+  -o-transition-property:      $property;
+  -webkit-transition-property: $property;
+  transition-property:         $property;
+}
+
+// ----------------------------------------------------------
+// 3. Transition-duration
+// ----------------------------------------------------------
+@mixin transition-duration($duration...) {
+  -moz-transition-duration:    $duration;
+  -o-transition-duration:      $duration;
+  -webkit-transition-duration: $duration;
+  transition-duration:         $duration;
+}
+
+// ----------------------------------------------------------
+// 4. Transition-timing-function
+// ----------------------------------------------------------
+@mixin transition-timing-function($timing...) {
+  -moz-transition-timing-function:    $timing;
+  -o-transition-timing-function:      $timing;
+  -webkit-transition-timing-function: $timing;
+  transition-timing-function:         $timing;
+}
+
+// ----------------------------------------------------------
+// 5. Transition-delay
+// ----------------------------------------------------------
+@mixin transition-delay($delay...) {
+  -moz-transition-delay:    $delay;
+  -o-transition-delay:      $delay;
+  -webkit-transition-delay: $delay;
+  transition-delay:         $delay;
+}

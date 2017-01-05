@@ -11,7 +11,7 @@
 // ----------------------------------------------------------
 .site-content {
   padding-top: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   -webkit-overflow-scrolling: touch; /* Inertie sur iOS */
   position: absolute;
   top: $header-height;
@@ -23,3 +23,17 @@
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
+
+// ----------------------------------------------------------
+// :: 1.2. Site content when the 'with--sidebar' class
+//         is present
+// ----------------------------------------------------------
+.with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
