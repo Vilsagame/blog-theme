@@ -15,8 +15,7 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  color: #c8f3a9;
 }
 
 .site-pusher,
@@ -155,6 +154,7 @@ a {
 .menu a {
   padding: 10px 0;
   text-align: center;
+  text-decoration: none;
   color: #97d36c;
   border-bottom: 1px solid #5c9632;
 }
@@ -276,4 +276,8 @@ a {
 
 .sidebar .widget.widget_search form div #searchsubmit:active {
   box-shadow: 0 .063em rgba(255, 255, 255, .4), inset 0 0 1.094em black, inset 0 .063em #010200, inset 0 -.188em #010200;
+}
+
+.not-found {
+  padding: 0 10px;
 }

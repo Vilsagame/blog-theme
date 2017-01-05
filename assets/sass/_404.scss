@@ -1,14 +1,11 @@
 // ----------------------------------------------------------
-// \file assets\sass\style.scss
+// \file assets\sass\_header.scss
 // \author Cyril POIDEVIN
 // \version 0.0.1
 //
-// Final StyleSheet
+// Styling the 404 page
 // ----------------------------------------------------------
 
-@import 'variables';
-@import 'base';
-@import 'header';
-@import 'content';
-@import 'sidebar';
-@import '404';
+.not-found {
+  padding: 0 10px;
+}
