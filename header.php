@@ -8,3 +8,14 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<div class="site-container">
+  <div class="site-pusher">
+    <header class="header">
+      <div class="header__logo">
+      </div>
+      <div class="header__title">
+        <h1><?php bloginfo() ?></h1>
+        <p><?php bloginfo( 'description' ); ?></p>
+      </div>
+
+    </header>

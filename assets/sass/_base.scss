@@ -1,0 +1,26 @@
+// ----------------------------------------------------------
+// \file assets\sass\_base.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Basing style
+// ----------------------------------------------------------
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $background-hex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
