@@ -7,7 +7,6 @@
  * Wordpress Functions File.
  */
 
-
 /**
  * \fn vgmAddStyle
  *
@@ -37,3 +36,75 @@ function vgmSetup()
   register_nav_menus(array('main_menu'=>'Menu principal'));
 }
 add_action('after_setup_theme', 'vgmSetup');
+
+/**
+ * \fn vgmAdminInit
+ *
+ * Init the admin page of this theme
+ */
+function vgmAdminInit()
+{
+  /**
+   * \fn vgmAdminScript
+   *
+   * Add css's files and js in the admin page of this theme
+   */
+  function vgmAdminScripts()
+  {
+    if (!isset($_GET['page']) || $_GET['page'] != 'vgm_theme_opts') {
+      return;
+    }
+    wp_enqueue_style( 'vgmMainAdminStyle', get_template_directory_uri() . '/assets/css/adminStyle.css', array(), false, 'all' );
+    wp_enqueue_media();
+    wp_enqueue_script('vgmMainAdminScript', get_template_directory_uri() . '/assets/js/adminOptions.js', array(), '1.0.1', true);
+  }
+  add_action('admin_enqueue_scripts', 'vgmAdminScripts');
+
+  include('includes/vgmSaveOptions.php');
+  add_action('admin_post_vgm_save_options', 'vgmSaveOptions');
+}
+add_action( 'admin_init', 'vgmAdminInit' );
+
+/**
+ * \fn vgmActivOptions
+ *
+ * Add necessary options in database if they aren't already added
+ */
+function vgmActivOptions() {
+  $theme_opts = get_option('vgm_opts');
+  if(!$theme_opts) {
+    $opts = array(
+    );
+    add_option('vgm_opts', $opts);
+  }
+}
+add_action('after_switch_theme', 'vgmActivOptions');
+
+/**
+ * \fn vgmAdminInit
+ *
+ * Add and remove feature in the admin page of this theme
+ */
+function vgmAdminMenus()
+{
+  add_menu_page('Vilsagame Options', 'Options du thème', 'publish_pages', 'vgm_theme_opts', 'vgmBuildAdminOptionsPage' );
+  include('includes/vgmAdminOptions.php');
+}
+add_action( 'admin_menu', 'vgmAdminMenus' );
+
+/**
+ * \fn vgmPictSizes
+ *
+ * Redifine the pictures sizes
+ *
+ * \param  array $sizes The sizes
+ * \return array The new sizes
+ */
+function vgmPictSizes($sizes)
+{
+  $addsizes = array(
+    "medium_large" => "Medium Large"
+  );
+  $newsizes = array_merge($sizes, $addsizes);
+  return $newsizes;
+}
