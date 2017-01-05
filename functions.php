@@ -108,3 +108,23 @@ function vgmPictSizes($sizes)
   $newsizes = array_merge($sizes, $addsizes);
   return $newsizes;
 }
+add_filter( 'image_size_names_choose', 'vgmPictSizes' );
+
+/*
+ * \fn vgmAddSidebar
+ *
+ * Ajout d'un widget
+*/
+function vgmAddSidebar()
+{
+  register_sidebar(array(
+    'id' => 'zone_widget_droite',
+    'name' => 'Sidebar de droite',
+    'description' => 'Apparait à droite du site, en bas pour les mobiles',
+    'before_widget' => '<div id="%1$s" class="%2$s widget">',
+    'after_widget' => '</div>',
+    'before_title' => '<h1>',
+    'after_title' => '</h1>'
+  ));
+}
+add_action('widgets_init','vgmAddSidebar');

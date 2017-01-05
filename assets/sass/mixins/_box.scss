@@ -1,0 +1,25 @@
+// ----------------------------------------------------------
+// \file assets\sass\mixins\_box-shadow.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Mixins 'box-shadow'
+// ----------------------------------------------------------
+
+// ----------------------------------------------------------
+// 1. Box-shadow
+// ----------------------------------------------------------
+@mixin box-shadow($params...) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
+
+// ----------------------------------------------------------
+// 1. Border-radius
+// ----------------------------------------------------------
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}

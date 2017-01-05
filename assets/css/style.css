@@ -7,6 +7,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  color: rgba(255, 255, 255, .5);
 }
 
 body {
@@ -184,10 +185,70 @@ a {
 }
 
 .with--sidebar .site-cache {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, .6);
+}
+
+.sidebar {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #5c9632;
+}
+
+.sidebar .widget {
+  margin: 10px 0;
+    /* stops bg color from leaking outside the border: */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(32, 32, 32, .5);
+  background-clip: padding-box;
+}
+
+.sidebar .widget.widget_search form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sidebar .widget.widget_search form div #searchsubmit {
+  font: bold .7rem sans-serif;
+  display: inline-block;
+  margin: 1rem;
+  padding: .938em 1.875em;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border: .094em solid;
+  border-color: #010200;
+  border-radius: .625em;
+  background-color: #2d5a0e;
+  box-shadow: 0 .375em .313em -.313em rgba(0, 0, 0, .8), inset 0 .063em rgba(255, 255, 255, .4), inset 0 -.188em rgba(0, 0, 0, .15);
+  text-shadow: 0 .063em rgba(0, 0, 0, .3);
+}
+
+.sidebar .widget.widget_search form div #searchsubmit:hover {
+  background-color: #20400a;
+  box-shadow: 0 .125em rgba(255, 255, 255, .4), inset 0 .063em rgba(255, 255, 255, .4), inset 0 -.188em #31630f;
+}
+
+.sidebar .widget.widget_search form div #searchsubmit:active {
+  box-shadow: 0 .063em rgba(255, 255, 255, .4), inset 0 0 1.094em black, inset 0 .063em #010200, inset 0 -.188em #010200;
 }
