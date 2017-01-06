@@ -1,0 +1,105 @@
+// ----------------------------------------------------------
+// \file assets\sass\responsive\_desktop.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Redisign for desktop
+// ----------------------------------------------------------
+
+@media (min-width: $breakpoint-desktop) {
+// ----------------------------------------------------------
+// 1. Header
+// ----------------------------------------------------------
+  .site-container {
+    overflow: auto;
+  }
+// ----------------------------------------------------------
+// 2. Header
+// ----------------------------------------------------------
+
+// ----------------------------------------------------------
+// :: 2.1 Title, Logo, Slogan
+// ----------------------------------------------------------
+  .header {
+    height: $header-height_desktop;
+    position: relative;
+  }
+
+  .header__logo {
+    display: block;
+    flex: 1;
+    order: -1;
+    padding: 10px 0 0 10px;
+    img {
+      height: $header-height_desktop - 20px;
+      width: auto;
+    }
+  }
+
+  .header__icon {
+    display: none;
+  }
+
+// ----------------------------------------------------------
+// :: 2.2 Menu
+// ----------------------------------------------------------
+  .menu {
+    position: relative;
+    width: auto;
+    background-color: inherit;
+    padding-right: 20px;
+    font-size: 150%;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transform: none;
+
+    a {
+      padding: 0 10px;
+      border-bottom: none;
+      color: $primary-4-hex;
+      text-decoration: underline;
+    }
+  }
+
+// ----------------------------------------------------------
+// 3. Site content
+// ----------------------------------------------------------
+  .site-content {
+    top: $header-height_desktop;
+    overflow-y: unset;
+  }
+
+// ----------------------------------------------------------
+// 4. Front-page
+// ----------------------------------------------------------
+  .last-articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .last-articles_title {
+    text-align: center;
+  }
+
+// ----------------------------------------------------------
+// 5. List of articles
+// ----------------------------------------------------------
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .article {
+    width: 30%;
+
+    &.article__single {
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+}

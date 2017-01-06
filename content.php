@@ -1,4 +1,5 @@
 <?php if (have_posts()) : ?>
+  <div class="articles">
   <?php while (have_posts()) : ?>
     <?php the_post(); ?>
     <article class="article">
@@ -11,6 +12,7 @@
       <?php the_content( 'Lire la suite ...' ); ?>
     </article>
   <?php endwhile; ?>
+  </div>
 <?php endif;  ?>
 <?php
 global $wp_query;

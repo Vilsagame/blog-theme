@@ -12,6 +12,8 @@
     <header class="header">
       <a href="#" class="header__icon" id="header__icon"></a>
       <div class="header__logo">
+        <?php $vgm_opts = get_option( 'vgm_opts' ); ?>
+        <img src="<?php echo $vgm_opts['logo_url']; ?>">
       </div>
       <div class="header__title">
         <h1><a href="<?php bloginfo('wpurl') ?>"><?php bloginfo() ?></a></h1>
@@ -28,7 +30,8 @@
                                 'link_after' => '',
                                 'depth' => 0,
                                 'items_wrap'      => '%3$s',
-                                'walker' => new vgmWalker())); ?>
+                                'walker' => new vgmWalker()
+                              )); ?>
       </nav>
     </header>
     <div class="site-content">

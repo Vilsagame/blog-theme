@@ -1,0 +1,21 @@
+// ----------------------------------------------------------
+// \file assets\sass\responsive\_tablet.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Redisign for tablet
+// ----------------------------------------------------------
+
+@media (min-width: $breakpoint-tablet) {
+// ----------------------------------------------------------
+// 1. Site Content
+// ----------------------------------------------------------
+  .site-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .sidebar {
+    margin: 0;
+  }
+}
