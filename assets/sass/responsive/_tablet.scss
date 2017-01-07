@@ -6,6 +6,8 @@
 // Redisign for tablet
 // ----------------------------------------------------------
 
+@import '../mixins/box';
+
 @media (min-width: $breakpoint-tablet) {
 // ----------------------------------------------------------
 // 1. Site Content
@@ -16,6 +18,7 @@
   }
 
   .sidebar {
-    margin: 0;
+    margin: 10px 0 0 0;
+    @include border-radius(20px);
   }
 }

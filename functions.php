@@ -34,6 +34,7 @@ function vgmSetup()
   add_theme_support('title-tag');
   require_once('includes/vgmWalker.php');
   register_nav_menus(array('main_menu'=>'Menu principal'));
+  register_nav_menus(array('footer_menu'=>'Menu de pied de page'));
 }
 add_action('after_setup_theme', 'vgmSetup');
 

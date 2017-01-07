@@ -1,0 +1,24 @@
+// ----------------------------------------------------------
+// \file assets\sass\_footer.scss
+// \author Cyril POIDEVIN
+// \version 0.0.1
+//
+// Styling the footer
+// ----------------------------------------------------------
+
+.footer {
+  display: none;
+  background-color: $primary-0-hex;
+  height: $header-height;
+
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  a {
+    padding: 0 20px;
+  }
+}

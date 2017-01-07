@@ -32,6 +32,10 @@ a {
   color: $primary-4-hex;
 }
 
+.site-container {
+  position: relative;
+}
+
 .site-pusher, .site-container { height: 100%; }
 .site-container { overflow: hidden; }
 

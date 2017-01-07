@@ -69,6 +69,9 @@
   .site-content {
     top: $header-height_desktop;
     overflow-y: unset;
+    bottom: unset;
+    position: relative;
+    top: unset;
   }
 
 // ----------------------------------------------------------
@@ -101,5 +104,11 @@
       width: auto;
       padding: 0 10px;
     }
+  }
+// ----------------------------------------------------------
+// 6. Footer
+// ----------------------------------------------------------
+  .footer {
+    display: block;
   }
 }
