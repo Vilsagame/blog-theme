@@ -6,14 +6,15 @@
   <meta name="description" content="a changer">
   <?php wp_head(); ?>
 </head>
-<body>
+<body class="custom-background">
 <div class="site-container">
   <div class="site-pusher">
     <header class="header">
       <a href="#" class="header__icon" id="header__icon"></a>
       <div class="header__logo">
-        <?php $vgm_opts = get_option( 'vgm_opts' ); ?>
-        <img src="<?php echo $vgm_opts['logo_url']; ?>">
+        <?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
+        <?php $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
+        <img src="<?php echo $image[0];?>">
       </div>
       <div class="header__title">
         <h1><a href="<?php bloginfo('wpurl') ?>"><?php bloginfo() ?></a></h1>

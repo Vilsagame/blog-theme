@@ -35,6 +35,21 @@ function vgmSetup()
   require_once('includes/vgmWalker.php');
   register_nav_menus(array('main_menu'=>'Menu principal'));
   register_nav_menus(array('footer_menu'=>'Menu de pied de page'));
+  $args = array(
+    'default-color' => '202020',
+    'default-image' => '',
+  );
+  add_theme_support( 'custom-background', $args );
+  add_theme_support( 'custom-logo', array(
+      'height'      => 400,
+      'width'       => 400,
+      'flex-width' => true,
+    ) );
+  add_theme_support( 'automatic-feed-links' );
+  // Add theme support for Post Formats
+  add_theme_support( 'post-formats', array( 'status', 'quote', 'image', 'link', 'aside' ) );
+  // Add theme support for HTML5 Semantic Markup
+  add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 }
 add_action('after_setup_theme', 'vgmSetup');
 
