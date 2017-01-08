@@ -46,7 +46,7 @@
   .menu {
     position: relative;
     width: auto;
-    background-color: inherit;
+    background-color: initial;
     padding-right: 20px;
     font-size: 150%;
 
@@ -56,6 +56,7 @@
     transform: none;
 
     a {
+      @include border-radius(20px);
       padding: 0 10px;
       border-bottom: none;
       color: $primary-4-hex;

@@ -15,7 +15,7 @@
 .sidebar {
   margin: 10px 0;
   padding: 10px;
-  background-color: $primary-0-hex;
+  background-color: transparent;
 
 // ----------------------------------------------------------
 // 1.1 Widget in sidebar
@@ -29,14 +29,14 @@
 // ----------------------------------------------------------
 // 1.1.1 Search widget
 // ----------------------------------------------------------
-    &.widget_search form div {
+    &.widget_search form {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
       align-content: center;
 
-      #searchsubmit {
+      .search-submit {
         display: inline-block;
         margin: 1rem;
         padding: .938em 1.875em;

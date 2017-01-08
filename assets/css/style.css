@@ -7,7 +7,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, .8);
 }
 
 body {
@@ -20,6 +20,11 @@ h1 {
 
 a {
   color: #c8f3a9;
+}
+
+.aligncenter {
+  display: block;
+  margin: auto;
 }
 
 .site-container {
@@ -59,7 +64,7 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 66px;
-  background-color: #5c9632;
+  background-color: transparent;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 }
@@ -218,7 +223,7 @@ a {
 .sidebar {
   margin: 10px 0;
   padding: 10px;
-  background-color: #5c9632;
+  background-color: transparent;
 }
 
 .sidebar .widget {
@@ -226,11 +231,11 @@ a {
     /* stops bg color from leaking outside the border: */
   padding: 20px;
   border-radius: 20px;
-  background-color: rgba(32, 32, 32, .5);
+  background-color: rgba(32, 32, 32, .3);
   background-clip: padding-box;
 }
 
-.sidebar .widget.widget_search form div {
+.sidebar .widget.widget_search form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +252,7 @@ a {
       align-content: center;
 }
 
-.sidebar .widget.widget_search form div #searchsubmit {
+.sidebar .widget.widget_search form .search-submit {
   font: bold .7rem sans-serif;
   display: inline-block;
   margin: 1rem;
@@ -266,12 +271,12 @@ a {
   text-shadow: 0 .063em rgba(0, 0, 0, .3);
 }
 
-.sidebar .widget.widget_search form div #searchsubmit:hover {
+.sidebar .widget.widget_search form .search-submit:hover {
   background-color: #20400a;
   box-shadow: 0 .125em rgba(255, 255, 255, .4), inset 0 .063em rgba(255, 255, 255, .4), inset 0 -.188em #31630f;
 }
 
-.sidebar .widget.widget_search form div #searchsubmit:active {
+.sidebar .widget.widget_search form .search-submit:active {
   box-shadow: 0 .063em rgba(255, 255, 255, .4), inset 0 0 1.094em black, inset 0 .063em #010200, inset 0 -.188em #010200;
 }
 
@@ -319,6 +324,11 @@ a {
     background-clip: padding-box;
         /* stops bg color from leaking outside the border: */;
   }
+
+  .footer,
+    .sidebar {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -362,7 +372,7 @@ a {
     padding-right: 20px;
     -webkit-transform: none;
             transform: none;
-    background-color: inherit;
+    background-color: initial;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -372,10 +382,13 @@ a {
   }
 
   .menu a {
+        /* stops bg color from leaking outside the border: */
     padding: 0 10px;
     text-decoration: underline;
     color: #c8f3a9;
     border-bottom: none;
+    border-radius: 20px;
+    background-clip: padding-box;
   }
 
   .site-content {
