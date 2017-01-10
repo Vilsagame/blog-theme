@@ -1,6 +1,18 @@
 <?php get_header() ?>
 
-<?php get_template_part('content', 'single'); ?>
+<?php if (have_posts()) : ?>
+  <?php while (have_posts()) : ?>
+    <?php the_post(); ?>
+    <article class="article article__single">
+      <?php if ( has_post_thumbnail() ) : ?>
+        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+          <?php the_post_thumbnail(); ?>
+        </a>
+      <?php endif; ?>
+      <?php the_content( 'Lire la suite ...' ); ?>
+    </article>
+  <?php endwhile; ?>
+<?php endif;  ?>
 
 <h1 class="last-articles_title">Les derniers articles</h1>
 

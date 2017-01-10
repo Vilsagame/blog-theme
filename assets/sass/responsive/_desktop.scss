@@ -23,6 +23,7 @@
   .header {
     height: $header-height_desktop;
     position: relative;
+    align-items: center;
   }
 
   .header__logo {
@@ -31,8 +32,9 @@
     order: -1;
     padding: 10px 0 0 10px;
     img {
-      height: $header-height_desktop - 20px;
+      height: $header-height_desktop - 10px;
       width: auto;
+      margin: 20px;
     }
   }
 
@@ -68,7 +70,6 @@
 // 3. Site content
 // ----------------------------------------------------------
   .site-content {
-    top: $header-height_desktop;
     overflow-y: unset;
     bottom: unset;
     position: relative;
@@ -76,7 +77,14 @@
   }
 
 // ----------------------------------------------------------
-// 4. Front-page
+// 4. Main
+// ----------------------------------------------------------
+  .main {
+    margin-top: 30px;
+  }
+
+// ----------------------------------------------------------
+// 5. Front-page
 // ----------------------------------------------------------
   .last-articles {
     display: flex;
@@ -89,7 +97,7 @@
   }
 
 // ----------------------------------------------------------
-// 5. List of articles
+// 6. List of articles
 // ----------------------------------------------------------
   .articles {
     display: flex;
@@ -107,7 +115,7 @@
     }
   }
 // ----------------------------------------------------------
-// 6. Footer
+// 7. Footer
 // ----------------------------------------------------------
   .footer {
     display: block;

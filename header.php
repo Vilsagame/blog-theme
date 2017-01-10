@@ -14,7 +14,7 @@
       <div class="header__logo">
         <?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
         <?php $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
-        <img src="<?php echo $image[0];?>">
+        <a href="<?php bloginfo('wpurl') ?>"><img src="<?php echo $image[0];?>"></a>
       </div>
       <div class="header__title">
         <h1><a href="<?php bloginfo('wpurl') ?>"><?php bloginfo() ?></a></h1>
