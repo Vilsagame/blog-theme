@@ -3,7 +3,7 @@
         <?php the_post(); ?>
         <div class="box">
             <h1 class="title"><?php the_title(); ?></h1>
-            <?php if ( has_post_thumbnail() ) : ?>>
+            <?php if ( has_post_thumbnail() ) : ?>
             <div class="one-third"
                 <div class="outer none"><span class="inset"><img src="<?php the_post_thumbnail_url(); ?>" alt=""></span>
             </div>
