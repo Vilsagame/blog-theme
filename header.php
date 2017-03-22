@@ -16,7 +16,7 @@
             <div class="logo">
                 <?php $custom_logo_id = get_theme_mod( 'custom_logo' ); ?>
                 <?php $image = wp_get_attachment_image_src( $custom_logo_id , 'full' ); ?>
-                <a href="<?php bloginfo('wpurl') ?>"><img src="<?php echo $image[0];?>"></a>
+                <a href="<?php bloginfo('wpurl') ?>"><img src="<?php echo $image[0];?>" height="29"></a>
             </div>
             <div id="menu-wrapper">
                 <nav id="menu" class="menu">
