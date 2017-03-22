@@ -10,7 +10,7 @@
             <div class="two-third last">
             <?php endif; ?>
             <?php the_content( 'Lire la suite ...' ); ?>
-            <?php if ( has_post_thumbnail() ) : ?>>
+            <?php if ( has_post_thumbnail() ) : ?>
                 <div class="clear"></div>
                 </div>
             <?php endif; ?>
