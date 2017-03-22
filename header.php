@@ -40,7 +40,12 @@
         </div>
     </div>
     <div class="wrapper">
-        <div class="intro">Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum, Vestibulum id ligula porta. </div>
+        <div class="intro">
+            <blockquote>
+                Il y existe deux manières de concevoir un logiciel. La première, c’est de le faire si simple qu’il est évident qu’il ne présente aucun problème. La seconde, c’est de le faire si compliqué qu’il ne présente aucun problème évident. La première méthode est de loin la plus complexe.
+                <cite>C.A.R. Hoare</cite>
+            </blockquote>
+        </div>
         <ul class="social">
             <li><a class="rss" href="/feed/"></a></li>
             <!-- <li><a class="facebook" href="#"></a></li>
