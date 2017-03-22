@@ -1,25 +1,37 @@
-    </main>
-    <?php get_sidebar(); ?>
-    <div class="site-cache" id="site-cache"></div>
-    <?php wp_footer(); ?>
+</div>
+<footer class="footer-wrapper">
+  <div id="footer" class="four">
+      <?php
+      if(is_active_sidebar('footer_widget_first')) :
+        ?>
+        <div id="first" class="widget-area">
+        <?php
+        dynamic_sidebar('footer_widget_first');
+          ?>
+        </div>
+          <?php
+      endif;
+      ?>
+      <?php
+      if(is_active_sidebar('footer_widget_second')) :
+        dynamic_sidebar('footer_widget_second');
+      endif;
+      ?>
+      <?php
+      if(is_active_sidebar('footer_widget_third')) :
+        dynamic_sidebar('footer_widget_third');
+      endif;
+      ?>
+      <?php
+      if(is_active_sidebar('footer_widget_fourth')) :
+        dynamic_sidebar('footer_widget_fourth');
+      endif;
+      ?>
   </div>
-  <footer class="footer">
-    <nav class="footer-menu">
-      <?php wp_nav_menu(array('theme_location' => 'footer_menu',
-                              'container' => false,
-                              'menu_id'  => '',
-                              'echo' => true,
-                              'before' => '',
-                              'after' => '',
-                              'link_before' => '',
-                              'link_after' => '',
-                              'depth' => 0,
-                              'items_wrap'      => '%3$s',
-                              'walker' => new vgmWalker()
-                            )); ?>
-    </nav>
-  </footer>
+</footer>
+<div class="site-generator-wrapper">
+  <div class="site-generator">Design by <a href="http://elemisfreebies.com">elemis</a>.</div>
 </div>
-</div>
+<?php wp_footer(); ?>
 </body>
 </html>

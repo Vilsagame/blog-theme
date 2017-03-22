@@ -14,23 +14,17 @@
 // :: 1.1. Hexadecimal
 // ----------------------------------------------------------
 // Primary Colors
-$primary-0-hex: #5C9632;
-$primary-1-hex: #0C1D00;
-$primary-2-hex: #2D5A0E;
-$primary-3-hex: #97D36C;
-$primary-4-hex: #C8F3A9;
+$primary-0-hex: #65817a;
+$primary-1-hex: #86aca3;
+$primary-2-hex: #383838;
+$primary-3-hex: #dedede;
+// $primary-4-hex: #C8F3A9;
 // Background Colors
 $background-hex: #202020;
 
 // ----------------------------------------------------------
 // :: 1.2. RGBA
 // ----------------------------------------------------------
-// Primary Colors
-$primary-0-rgba: rgba( 92,150, 50,1);
-$primary-1-rgba: rgba( 12, 29,  0,1);
-$primary-2-rgba: rgba( 45, 90, 14,1);
-$primary-3-rgba: rgba(151,211,108,1);
-$primary-4-rgba: rgba(200,243,169,1);
 // Background Colors
 $background-rgba: rgba(32, 32, 32, 1);
 // widget
@@ -38,7 +32,36 @@ $widget-background-rgba: rgba(32, 32, 32, 0.3);
 $off-wht: rgba(white,.4);
 
 // Font Colors
-$primary-font-rgba: rgba(255, 255, 255, 0.8);
+$primary-font: #b9b9b9;
+$secondary-font: #797979;
+
+// Buttons
+$blue-background: #5f9cb8;
+$blue-color: #2d444e;
+$pink-background: #b55fb8;
+$pink-color: #443144;
+$purple-background: #635fb8;
+$purple-color: #313045;
+$yellow-background: #ac9757;
+$yellow-color: #433f32;
+$red-background: #ac5757;
+$red-color: #4a3232;
+$green-background: #5ca980;
+$green-color: #2b4638;
+
+// Box
+$info-box-background: #7790a6;
+$info-box-border-color:#86a2bf;
+$info-box-color: #26415c;
+$warning-box-background: #a97777;
+$warning-box-border-color:#bf8686;
+$warning-box-color: #531717;
+$download-box-background: #77a984;
+$download-box-border-color:#86bf9d;
+$download-box-color: #2e4534;
+$note-box-background: #cbcc79;
+$note-box-border-color:#e7e88c;
+$note-box-color: #47451b;
 
 // ----------------------------------------------------------
 // 2. Header

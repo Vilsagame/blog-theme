@@ -1,14 +1,19 @@
 <?php if (have_posts()) : ?>
-  <?php while (have_posts()) : ?>
-    <?php the_post(); ?>
-    <article class="article article__single">
-      <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-      <?php if ( has_post_thumbnail() ) : ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      <?php endif; ?>
-      <?php the_content( 'Lire la suite ...' ); ?>
-    </article>
-  <?php endwhile; ?>
+    <?php while (have_posts()) : ?>
+        <?php the_post(); ?>
+        <div class="box">
+            <h1 class="title"><?php the_title(); ?></h1>
+            <?php if ( has_post_thumbnail() ) : ?>>
+            <div class="one-third"
+                <div class="outer none"><span class="inset"><img src="style/images/art/about.jpg" alt=""></span>
+            </div>
+            <div class="two-third last">
+            <?php endif; ?>
+            <?php the_content( 'Lire la suite ...' ); ?>
+            <?php if ( has_post_thumbnail() ) : ?>>
+                <div class="clear"></div>
+                </div>
+            <?php endif; ?>
+        </div>
+<?php endwhile; ?>
 <?php endif;  ?>

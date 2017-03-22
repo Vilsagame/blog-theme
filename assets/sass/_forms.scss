@@ -1,0 +1,73 @@
+.forms {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+.form-container .response {
+    color: #58a267;
+    display: none;
+    margin: 0 0 15px 0;
+}
+.forms ol {
+    margin: 0;
+    padding: 0;
+}
+.forms ol li {
+    line-height: auto;
+    list-style: none;
+}
+.forms li.form-row {
+    margin-bottom: 20px
+}
+.forms li.hidden-row {
+    display: none
+}
+.forms fieldset .text-input,
+.forms fieldset .text-area,
+#commentform input,
+#commentform textarea {
+    padding: 7px 10px;
+    height: 35px;
+}
+.forms fieldset .text-area,
+#commentform textarea {
+    min-height: 200px;
+    padding: 10px;
+    resize: vertical;
+}
+.forms li.error input,
+.forms li.error textarea {
+    border: 1px solid #6a3333
+}
+.forms span.error {
+    display: none
+}
+.forms .button-row span.error {
+    padding: 0;
+    display: none;
+}
+.forms label {
+    display: block;
+    margin-bottom: 5px;
+}
+#commentform label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-container:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.searchform input {
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+.form-allowed-tags {
+    display: none
+}
+.forms br {
+    display: none
+}

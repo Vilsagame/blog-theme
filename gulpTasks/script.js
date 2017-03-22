@@ -21,7 +21,7 @@ var babel = require('gulp-babel')
 // Development Tasks
 // -----------------
 gulp.task('scripts', function(){
-  gulp.src('./assets/js/**/*.js')
+  gulp.src('./assets/js/app.js')
     .pipe(plumber())
     .pipe(eslint())
     .pipe(eslint.format())

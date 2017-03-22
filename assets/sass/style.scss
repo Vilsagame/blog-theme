@@ -7,12 +7,13 @@
 // ----------------------------------------------------------
 
 @import 'variables';
+@import 'reset';
 @import 'base';
-@import 'header';
 @import 'content';
-@import 'sidebar';
 @import 'footer';
+@import 'forms';
+@import 'columns';
+@import 'menu';
+@import 'social';
+@import 'twitter';
 @import '404';
-
-@import 'responsive/tablet';
-@import 'responsive/desktop';

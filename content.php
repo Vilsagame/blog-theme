@@ -1,26 +1,20 @@
-<?php if (have_posts()) : ?>
-  <div class="articles">
-  <?php while (have_posts()) : ?>
-    <?php the_post(); ?>
-    <article class="article">
-      <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-      <?php if ( has_post_thumbnail() ) : ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      <?php endif; ?>
-      <?php the_content( 'Lire la suite ...' ); ?>
-    </article>
-  <?php endwhile; ?>
-  </div>
-<?php endif;  ?>
+<div class="blog-wrap">
+    <div class="blog-grid">
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : ?>
+            <?php the_post(); ?>
+            <?php get_template_part('post', get_post_format() ? : 'standard'); ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
+    </div>
+</div>
 <?php
 global $wp_query;
 $big = 999999999;
 $total_pages = $wp_query->max_num_pages;
 
 if ($total_pages > 1) :?>
-  <div>
+  <div id="navigation">
     <?php echo paginate_links(array(
       'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
       'format' => '/page/%#%',

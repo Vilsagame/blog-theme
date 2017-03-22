@@ -1,0 +1,32 @@
+.widget_twitter .entry-meta {
+    display: block;
+    font-size: 11px;
+}
+.widget_twitter .entry-meta a {
+    color: #797979 !important
+}
+.widget_twitter .entry-meta a:hover {
+    color: #86aca3 !important
+}
+.widget_twitter ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 15px;
+}
+.widget_twitter ul li {
+    background: transparent url(../images/line.png) repeat-x center top;
+    padding: 0;
+    padding-top: 15px !important;
+    margin-top: 14px;
+}
+.widget_twitter ul li:first-child {
+    background: none;
+    margin: 0;
+    padding: 0 !important;
+}
+.follow-button {
+    display: block;
+    background: transparent url(../images/line.png) repeat-x left top;
+    margin: 0;
+    padding: 15px 0 0 0;
+}

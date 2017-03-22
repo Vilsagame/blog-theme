@@ -1,0 +1,89 @@
+#menu-wrapper .menu {
+    list-style: none;
+    float: right;
+    position: relative;
+    z-index: 1003;
+    padding: 30px 0;
+}
+#menu-wrapper .menu ul {
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    overflow: inherit;
+}
+#menu-wrapper .menu ul li {
+    position: relative;
+    float: left;
+    background: none;
+    padding-left: 15px;
+    margin-left: 15px;
+}
+#menu-wrapper .menu ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 1;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    color: $primary-3-hex;
+    -webkit-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    padding: 0;
+    font-weight: bold;
+}
+#menu-wrapper .menu ul li.active a,
+#menu-wrapper .menu ul li a:hover {
+    color: $primary-1-hex;
+}
+#menu-wrapper .menu ul li.active li a {
+    color: $primary-3-hex
+}
+#menu-wrapper .menu ul li ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    visibility: hidden;
+    width: 160px;
+    padding: 31px 0 0 0;
+}
+#menu-wrapper .menu ul li ul ul {
+    padding: 0;
+}
+#menu-wrapper .menu ul li ul li {
+    display: list-item;
+    float: none;
+    background-color: #2c2c2c;
+    padding: 0 15px;
+    margin: 0;
+}
+#menu-wrapper .menu ul li ul li:first-child {
+    background-image: none
+}
+#menu-wrapper .menu ul li ul li ul {
+    top: 0
+}
+#menu-wrapper .menu ul li ul li a {
+    margin: 0;
+    border: none;
+    padding: 13px 0;
+    line-height: 1;
+    font-size: 13px;
+    background-image: url(../images/line.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+}
+#menu-wrapper .menu ul li ul li:first-child a {
+    background: none
+}
+#menu-wrapper .menu ul li ul li a:hover {
+    color: $primary-1-hex;
+}
+* html .menu {
+    height: 1%
+}
+.selectnav {
+    display: none;
+    width: 280px;
+    margin: 0 auto;
+}
