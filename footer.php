@@ -48,7 +48,7 @@
   </div>
 </footer>
 <div class="site-generator-wrapper">
-  <div class="site-generator">Design by <a href="http://elemisfreebies.com">elemis</a>.</div>
+  <div class="site-generator">Design by <a href="http://elemisfreebies.com">elemis</a>, develop by <a href="https://github.com/vilsafur">Vilsafur</a>.</div>
 </div>
 <?php wp_footer(); ?>
 </body>

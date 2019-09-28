@@ -14,6 +14,9 @@
                 <div class="clear"></div>
                 </div>
             <?php endif; ?>
+            <?php if (comments_open()) : ?>
+                <?php comments_template(); ?>
+            <?php endif; ?>
         </div>
 <?php endwhile; ?>
 <?php endif;  ?>
